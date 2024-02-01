@@ -91,6 +91,7 @@ const ReadTableCom = () => {
                 <ButtonComponent
                   buttonTitle="Edit"
                   btnClass="btn-success"
+                  data-testid ="btn-comman"
                   handleOnClick={() =>
                     setToLocalStorage(row.id, row.name, row.email, row.password)
                   }

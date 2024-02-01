@@ -7,7 +7,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-  const history = useNavigate();
+  
+  // const history = useNavigate();
 
   const [inpval, setInpval] = useState({
     email: '',

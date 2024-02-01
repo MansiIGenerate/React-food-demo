@@ -59,7 +59,7 @@ const Registeruppage = () => {
     } else if (!validatePassword(password)) {
       toast.error('Password is required and should be at least six characters long!', { position: 'top-center' });
     } else {
-      console.log('Data added successfully');
+      // console.log('Data added successfully');
       history('/');
       localStorage.setItem('userto', JSON.stringify([...data, inpval]));
     }
