@@ -22,25 +22,6 @@ import Registeruppage from './components/Login-signup-page/Registeruppage';
 
 function App() {
   return (
-
-    
-    // <Router>
-    //   <div className="App">
-    //     <Navbar />
-    //     <Switch>
-    //       <Route exact path='/' component={Signuppage}/>
-    //       <Route exact path='/login' component={Login}/>
-    //       <Route exact path="/home" component={Home} />
-    //       <Route exact path="/about" component={About} />
-    //       <Route exact path="/contact" component={Contact} />
-    //       <Route exact path="/users/add" component={AddUserr} />
-    //       <Route exact path="/users/edit/:id" component={EditUserr} />
-    //       <Route exact path="/users/:id" component={User} />
-    //       <Route component={NotFound} />
-    //     </Switch>
-    //   </div>
-    // </Router>
-  
 <>
 
      <Context>
