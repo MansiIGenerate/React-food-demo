@@ -36,6 +36,7 @@ function App() {
         <Route  path="/update"  element={<Updatedata/>}/>
         {/* <Route path="/read"  element={<Readuserdata/>}/> */}
         <Route path="/read"  element={<ReadTableCom/>}/>
+     
         </Routes>
         </Context>
 
