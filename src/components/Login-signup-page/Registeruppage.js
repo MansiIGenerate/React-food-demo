@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Registeruppage = () => {
 
-  // const history = useNavigate();
+  const history = useNavigate();
 
   const [inpval, setInpval] = useState({
     name: '',

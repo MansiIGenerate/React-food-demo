@@ -97,7 +97,6 @@ const ReadTableCom = () => {
                   }
                 />
               </Link>
-
               <ButtonComponent
                 handleOnClick={() => handleDelete(row.id)}
                 buttonTitle="Delete"
@@ -107,7 +106,6 @@ const ReadTableCom = () => {
           ),
         }))}
       />
- 
       < PaginationsComman
         totalItems={data.length}
         itemsPerPage={itemsPerPage}

@@ -17,13 +17,9 @@ import Registeruppage from './components/Login-signup-page/Registeruppage';
 
 
 
-
-
-
 function App() {
   return (
 <>
-
      <Context>
       <Routes>
         <Route path='/login' element={<Registeruppage/>}></Route>

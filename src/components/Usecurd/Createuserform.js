@@ -52,22 +52,6 @@ const Createuseform = () => {
     if (!validationsitem()) {
       return;
     }
-
-    // const newErrors = {};
-    // if (!validateName(name)) {
-    //   newErrors.name = "Name is required and should contain only letters.";
-    // }
-    // if (!validateEmail(email)) {
-    //   newErrors.email = "Invalid email address.";
-    // }
-    // if (!validatePassword(password)) {
-    //   newErrors.password = "Password is required and should be at least 6 characters.";
-    // }
-    // if (Object.keys(newErrors).length > 0) {
-    //   setErrors(newErrors);
-    //   return;
-    // }
-
     axios
       .post("https://65b68428da3a3c16ab00d20e.mockapi.io/curdApp/curd-datato", {
         name: name,
