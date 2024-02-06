@@ -3,9 +3,9 @@ import React, { useEffect } from 'react';
 import { AiOutlineCheck } from "@react-icons/all-files/ai/AiOutlineCheck";
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose";
 import { motion } from "framer-motion";
-import data from "../data/data.json";
-import { Contextapp } from "../mainFood/ContextFood";
-import "../../Allcss/Food.css"
+import data from "../../data/data.json"
+import { Contextapp } from "../Context/ContextFood";
+import "../../asset/styles/Food.css"
 const Menu = () => {
   // console.log(data);
   let menu = Object.getOwnPropertyNames(data);

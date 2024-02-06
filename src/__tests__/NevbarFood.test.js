@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen, waitFor } from '@testing-library/react';
-import NevbarFood from '../components/restaurants/mainFood/NevbarFood';
+import NevbarFood from '../components/Navbar/NevbarFood';
 
 test('renders NevbarFood component with links and cart icon', () => {
 

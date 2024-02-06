@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen, waitFor } from '@testing-library/react';
-import FoodHome from '../components/restaurants/mainFood/FoodHome';
+import FoodHome from '../components/home/FoodHome';
 
 test('renders FoodHome component with correct content', () => {
 

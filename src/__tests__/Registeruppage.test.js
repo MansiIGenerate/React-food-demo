@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
 import "@testing-library/jest-dom";
-import Registeruppage from "../components/Login-signup-page/Registeruppage";
+import Registeruppage from "../components/Register/Registeruppage";
 
 const addDataMock = jest.fn();
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import ButtonComponent from '../components/Commancompo/ButtonComponent';
+import ButtonComponent from '../components/Comman/ButtonComponent';
 
 describe('ButtonComponent', () => {
     test('renders button with correct title and class', () => {

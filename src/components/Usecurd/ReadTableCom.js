@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import ButtonComponent from "../Commancompo/ButtonComponent";
-import TableComponent from "../Commancompo/TableComponets";
-import PaginationsComman from "../Commancompo/PaginationsComman";
+import ButtonComponent from "../Comman/ButtonComponent";
+import TableComponent from "../Comman/TableComponets";
+import PaginationsComman from "../Comman/PaginationsComman";
 
 const ReadTableCom = () => {
   const [data, setData] = useState([]);
@@ -88,14 +88,14 @@ const ReadTableCom = () => {
           actions: (
             <>
               <Link to="/update">
-                <ButtonComponent
-                  buttonTitle="Edit"
-                  btnClass="btn-success"
-                  data-testid ="btn-comman"
-                  handleOnClick={() =>
-                    setToLocalStorage(row.id, row.name, row.email, row.password)
-                  }
-                />
+                  <ButtonComponent
+                    buttonTitle="Edit"
+                    btnClass="btn-success"
+                    data-testid ="btn-comman"
+                    handleOnClick={() =>
+                      setToLocalStorage(row.id, row.name, row.email, row.password)
+                    }
+                  />
               </Link>
               <ButtonComponent
                 handleOnClick={() => handleDelete(row.id)}
@@ -118,3 +118,4 @@ const ReadTableCom = () => {
 };
 
 export default ReadTableCom;
+

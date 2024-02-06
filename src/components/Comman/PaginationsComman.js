@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Allcss/Paginationsto.css';
+import '../../asset/styles/Paginationsto.css';
 
 const PaginationsComman = ({totalItems,itemsPerPage,currentPage,onPageChange,  onDelete}) => {
 

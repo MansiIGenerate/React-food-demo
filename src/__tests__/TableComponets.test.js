@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, waitFor } from '@testing-library/react';
-import TableComponent from '../components/Commancompo/TableComponets';
+import {  waitFor } from '@testing-library/react';
+import TableComponent from '../components/Comman/TableComponets';
 
 test('renders table with correct columns and data', () => {
     const data = [

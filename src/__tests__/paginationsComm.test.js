@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, fireEvent, waitFor } from '@testing-library/react';
-import PaginationsComman from '../components/Commancompo/PaginationsComman';
+import PaginationsComman from '../components/Comman/PaginationsComman';
 
 test('renders pagination with correct number of pages', () => {
     const totalItems = 30;

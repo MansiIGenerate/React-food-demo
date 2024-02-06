@@ -2,7 +2,7 @@
 import React from 'react';
 import {  screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Login from '../components/Login-signup-page/Login';
+import Login from '../components/Login/Login';
 
 describe('Login Component', () => {
 

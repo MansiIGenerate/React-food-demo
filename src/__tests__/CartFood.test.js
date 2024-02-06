@@ -38,7 +38,7 @@ describe("Cart Component", () => {
 test('triggers checkout action when clicked', () => {
     const mockCheckout = jest.fn();
   <Context/>
-  
+
     waitFor(() => {
         const logoText = screen.getByText('cart');
         expect(logoText).toBeInTheDocument();

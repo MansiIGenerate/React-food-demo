@@ -1,9 +1,9 @@
 
-import Cart from '../restaurants/mainFood/CartFood';
-import Context from '../restaurants/mainFood/ContextFood';
-import Home from '../restaurants/mainFood/FoodHome';
-import Menu from '../restaurants/mainFood/Menu';
-import Nevbar from '../restaurants/mainFood/NevbarFood';
+import Cart from "../FoodCart/CartFood"
+import Context from '../Context/ContextFood';
+import Home from '../home/FoodHome';
+import Menu from '../menu/Menu';
+import Nevbar from '../Navbar/NevbarFood';
 import{BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 
 function Foodmaindetail() {
@@ -24,3 +24,6 @@ function Foodmaindetail() {
 }
 
 export default Foodmaindetail;
+
+
+

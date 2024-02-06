@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import SIgn_img from './SIgn_img';
+import SIgn_img from '../../asset/image/SIgn_img';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
@@ -80,7 +80,7 @@ const Registeruppage = () => {
               </Form.Group>
               <Form.Group className="mb-3 col-lg-6" controlId="formBasicDate" placeholder="date">
                 <Form.Control onChange={getdata} name="date" type="date" />
-              </Form.Group> 
+              </Form.Group>
               <Form.Group className="mb-3 col-lg-6" controlId="formBasicPassword">
                 <Form.Control
                   type={showPassword ? 'text' : 'password'}
@@ -95,7 +95,7 @@ const Registeruppage = () => {
                   className="mt-2"
                 />
               </Form.Group>
-              <Button 
+              <Button
                 variant="primary"
                 className="col-lg-6"
                 onClick={addData}
