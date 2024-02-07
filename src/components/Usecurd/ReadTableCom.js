@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import ButtonComponent from "../Commancompo/ButtonComponent";
-import TableComponent from "../Commancompo/TableComponets";
-import PaginationsComman from "../Commancompo/PaginationsComman";
+import ButtonComponent from "../Comman/ButtonComponent";
+import TableComponent from "../Comman/TableComponets";
+import PaginationsComman from "../Comman/PaginationsComman";
 
 const ReadTableCom = () => {
   const [data, setData] = useState([]);
@@ -15,7 +15,7 @@ const ReadTableCom = () => {
     { key: "id", name: "ID" },
     { key: "name", name: "Name" },
     { key: "email", name: "Email" },
-    { key: "password", name: "Password" },  
+    { key: "password", name: "Password" },
     // { key: 'password', name: '123' },
     { key: "actions", name: "Actions" },
   ];
@@ -41,9 +41,10 @@ const ReadTableCom = () => {
       // });
       .then(() => {
         const LastItemLastPage =
-          data.length % itemsPerPage === 1 && currentPage === Math.ceil(data.length / itemsPerPage);
+          data.length % itemsPerPage === 1 &&
+          currentPage === Math.ceil(data.length / itemsPerPage);
         if (LastItemLastPage && currentPage > 1) {
-          setCurrentPage(currentPage -1);
+          setCurrentPage(currentPage - 1);
         } else {
           getData();
         }
@@ -51,7 +52,7 @@ const ReadTableCom = () => {
       .catch((error) => {
         console.error("Error deleting item:", error);
       });
-    }
+  }
 
   const setToLocalStorage = (id, name, email, password) => {
     localStorage.setItem("id", id);
@@ -63,7 +64,6 @@ const ReadTableCom = () => {
   useEffect(() => {
     getData();
   }, [currentPage]);
-
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -91,9 +91,16 @@ const ReadTableCom = () => {
                 <ButtonComponent
                   buttonTitle="Edit"
                   btnClass="btn-success"
-                  handleOnClick={() =>
-                    setToLocalStorage(row.id, row.name, row.email, row.password)
-                  }
+                  data-testid="btn-comman"
+                  variant="primary"
+                  handleOnClick={() => {
+                    setToLocalStorage(
+                      row.id,
+                      row.name,
+                      row.email,
+                      row.password
+                    );
+                  }}
                 />
               </Link>
 
@@ -106,14 +113,12 @@ const ReadTableCom = () => {
           ),
         }))}
       />
- 
-      < PaginationsComman
+      <PaginationsComman
         totalItems={data.length}
         itemsPerPage={itemsPerPage}
         currentPage={currentPage}
         onPageChange={handlePageChange}
       />
-    
     </>
   );
 };

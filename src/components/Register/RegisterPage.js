@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import SIgn_img from './SIgn_img';
+// import SIgn_img from '../../Asset/image/SIgn_img';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Registeruppage = () => {
+const RegisterPage = () => {
 
-  // const history = useNavigate();
+  const history = useNavigate();
 
   const [inpval, setInpval] = useState({
     name: '',
@@ -59,7 +59,7 @@ const Registeruppage = () => {
     } else if (!validatePassword(password)) {
       toast.error('Password is required and should be at least six characters long!', { position: 'top-center' });
     } else {
-      console.log('Data added successfully');
+      // console.log('Data added successfully');
       history('/');
       localStorage.setItem('userto', JSON.stringify([...data, inpval]));
     }
@@ -80,7 +80,7 @@ const Registeruppage = () => {
               </Form.Group>
               <Form.Group className="mb-3 col-lg-6" controlId="formBasicDate" placeholder="date">
                 <Form.Control onChange={getdata} name="date" type="date" />
-              </Form.Group> 
+              </Form.Group>
               <Form.Group className="mb-3 col-lg-6" controlId="formBasicPassword">
                 <Form.Control
                   type={showPassword ? 'text' : 'password'}
@@ -95,7 +95,7 @@ const Registeruppage = () => {
                   className="mt-2"
                 />
               </Form.Group>
-              <Button 
+              <Button
                 variant="primary"
                 className="col-lg-6"
                 onClick={addData}
@@ -111,7 +111,7 @@ const Registeruppage = () => {
               Already Have an Account <span><NavLink to="/">Sign in</NavLink></span>{' '}
             </p>
           </div>
-          <SIgn_img />
+          {/* <SIgn_img /> */}
         </section>
         <ToastContainer />
       </div>
@@ -119,7 +119,7 @@ const Registeruppage = () => {
   );
 };
 
-export default Registeruppage;
+export default RegisterPage;
 
 
 

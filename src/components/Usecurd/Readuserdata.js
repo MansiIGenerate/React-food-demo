@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import ButtonComponent from "../Commancompo/ButtonComponent";
+import ButtonComponent from "../Comman/ButtonComponent";
 
 
-const Readuserdata = () => {
+const ReadUserData = () => {
   const [data, setData] = useState([]);
   function getData() {
     axios
@@ -105,4 +105,4 @@ const Readuserdata = () => {
   );
 };
 
-export default Readuserdata;
+export default ReadUserData;

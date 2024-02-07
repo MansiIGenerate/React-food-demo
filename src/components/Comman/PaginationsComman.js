@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Allcss/Paginationsto.css';
+import '../../Asset/styles/Paginationsto.css';
 
 const PaginationsComman = ({totalItems,itemsPerPage,currentPage,onPageChange,  onDelete}) => {
 
@@ -10,10 +10,9 @@ const PaginationsComman = ({totalItems,itemsPerPage,currentPage,onPageChange,  o
     if (onDelete && typeof onDelete === 'function') {
       onDelete();
     }
-  
+
     const LastItemLastPage =
       pageNumber === totalPages && totalItems % itemsPerPage === 0;
-  
     if (LastItemLastPage) {
       onPageChange(currentPage -1);
     } else {

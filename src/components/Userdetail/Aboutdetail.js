@@ -1,8 +1,8 @@
 import React from "react";
 import Button from 'react-bootstrap/Button'
 import { useNavigate } from 'react-router-dom'
-const AboutDetail = () => {
 
+const AboutDetail = () => {
   const history = useNavigate();
   const Menushow = ()=>{
     history("/homefood");
