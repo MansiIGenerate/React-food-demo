@@ -1,15 +1,15 @@
 
 import Cart from "../FoodCart/CartFood"
-import Context from '../Context/ContextFood';
-import Home from '../home/FoodHome';
-import Menu from '../menu/Menu';
+import ContextFood from '../Context/ContextFood';
+import Home from '../Home/FoodHome';
+import Menu from '../Menu/Menu';
 import Nevbar from '../Navbar/NevbarFood';
 import{BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 
-function Foodmaindetail() {
+function FoodMainDetail() {
   return (
     <div>
-      <Context>
+      <ContextFood>
       <Router>
       <Nevbar/>
      <Routes>
@@ -17,13 +17,13 @@ function Foodmaindetail() {
       <Route path='/cart'  element={<Cart/>}/>
       </Routes>
       </Router>
-      </Context>
+      </ContextFood>
       
     </div>
   );
 }
 
-export default Foodmaindetail;
+export default  FoodMainDetail;
 
 
 

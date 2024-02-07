@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { Contextapp } from "../Context/ContextFood";
 import { useNavigate } from "react-router-dom";
-import"../../asset/styles/Cart.css";
+import"../../Asset/styles/Cart.css";
 import NevbarFood from "../Navbar/NevbarFood";
 const CartFood = () => {
     const navitem = useNavigate()

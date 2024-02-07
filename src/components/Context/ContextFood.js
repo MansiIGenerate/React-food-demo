@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const Contextapp = createContext(null);
 
-const Context = (props) => {
+const ContextFood = (props) => {
 
     const [cartitem, setcaritem] = useState([]);
     const [added, setadded] = useState(null);
@@ -32,4 +32,4 @@ const Context = (props) => {
        </>
     )
 };
-export default Context; 
+export default ContextFood; 

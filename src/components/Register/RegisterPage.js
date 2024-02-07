@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import SIgn_img from '../../asset/image/SIgn_img';
+// import SIgn_img from '../../Asset/image/SIgn_img';
 import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Registeruppage = () => {
+const RegisterPage = () => {
 
   const history = useNavigate();
 
@@ -111,7 +111,7 @@ const Registeruppage = () => {
               Already Have an Account <span><NavLink to="/">Sign in</NavLink></span>{' '}
             </p>
           </div>
-          <SIgn_img />
+          {/* <SIgn_img /> */}
         </section>
         <ToastContainer />
       </div>
@@ -119,7 +119,7 @@ const Registeruppage = () => {
   );
 };
 
-export default Registeruppage;
+export default RegisterPage;
 
 
 

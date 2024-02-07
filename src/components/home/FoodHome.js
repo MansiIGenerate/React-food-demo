@@ -1,4 +1,4 @@
-import foodimg from "../../asset/image/foodimg.jpg";
+import foodimg from "../../Asset/image/foodimg.jpg";
 import { Link } from "react-router-dom";
 import NevbarFood from "../Navbar/NevbarFood";
 const FoodHome =()=>{

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 
-const Createuseform = () => {
+const CreateUserForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,7 +27,7 @@ const Createuseform = () => {
   };
 
 
-  const validationsitem = ()=>{
+  const validatiOfFoodsitem = ()=>{
    const newErrors = {};
     if (!validateName(name)) {
       newErrors.name = "Name is required and should contain only letters.";
@@ -49,7 +49,7 @@ const Createuseform = () => {
     e.preventDefault();
   //   const err = validationsitem()
   // console.log(err)
-    if (!validationsitem()) {
+    if (!validatiOfFoodsitem ()) {
       return;
     }
     axios
@@ -129,7 +129,7 @@ const Createuseform = () => {
   );
 };
 
-export default Createuseform;
+export default CreateUserForm;
 
 
 
